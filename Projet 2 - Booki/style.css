@@ -122,6 +122,13 @@ nav {
 .search-input::placeholder {
     color: black;
 }
+.search-input:focus {
+    outline: none;
+}
+.search-input:focus::placeholder {
+    color: transparent; /* Cache le texte du placeholder */
+}
+
 .search-button {
     display: flex;
     align-items: center;
