@@ -6,6 +6,7 @@
 :root {
     --main-color: #0065fc;
     --main-bg-color: #f2f2f2;
+    --border-color: #d9d9d9;
     --filter-bg-color: #deebff;
 }
 body {
@@ -23,7 +24,8 @@ h2 {
     font-size: 22px;
 }
 h3 {
-    padding: 3px 0px;
+    font-weight: bold;
+    font-size: 18px;
 }
 p {
     font-style: normal;
@@ -81,9 +83,9 @@ nav {
     border-top: 2px solid var(--main-color);
 }
 
-/****** Info ***********/
+/****** Info-group ***********/
 
-.info {
+.info-group {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -97,7 +99,7 @@ nav {
     align-items: center;
     justify-content: start;
     height: 50px;
-    border: 1px solid var(--main-bg-color);
+    border: 1px solid var(--border-color);
     border-radius: 15px;
 }
 .position {
@@ -126,16 +128,15 @@ nav {
     outline: none;
 }
 .search-input:focus::placeholder {
-    color: transparent; /* Cache le texte du placeholder */
+    color: transparent;
 }
-
 .search-button {
     display: flex;
     align-items: center;
     background-color: var(--main-color);
     padding: 0px 16px;
     gap: 5px;
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--border-color);
     border-radius: 0px 15px 15px 0px;
     cursor: pointer;
 }
@@ -144,6 +145,48 @@ nav {
 }
 .fa-magnifying-glass {
     display: none;
+}
+
+/****** Filters ***********/
+
+.filters {
+    display: flex;
+    gap: 20px;
+}
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: solid 2px var(--border-color);
+    border-radius: 25px;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+.filter:hover {
+    background-color: var(--filter-bg-color);
+}
+.filter p {
+    font-weight: 700;
+}
+
+/****** Info ***********/
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+}
+.fa-info {
+    font-size: 12px;
 }
 
 /****** Card ***********/
