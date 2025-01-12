@@ -4,9 +4,9 @@
 }
 
 :root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+    --main-color: #0065fc;
+    --main-bg-color: #f2f2f2;
+    --filter-bg-color: #deebff;
 }
 
 .fa-solid {
@@ -16,6 +16,58 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
+    width: 100%;
+}
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+h2 {
+    font-size: 22px;
+}
+h3 {
+    padding: 3px 0px;
+}
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/****** Header ***********/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 79px;
+}
+
+#logo {
+    width: 61px;
+    height: 19px;
+    padding: 25px 50px;
+}
+nav {
+    width: 344px;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+.navlink {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding-top: 14px;
+}
+.navlink:hover {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
 }
 
 .main-container {
@@ -55,7 +107,7 @@ a {
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
 }
 
 /****** Hebergements And Populaires ***********/
@@ -120,9 +172,6 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
