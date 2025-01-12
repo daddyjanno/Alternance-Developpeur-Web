@@ -8,14 +8,7 @@
     --main-bg-color: #f2f2f2;
     --filter-bg-color: #deebff;
 }
-
-.fa-solid {
-    color: var(--main-color);
-}
-
 body {
-    display: flex;
-    justify-content: center;
     margin: 0;
     width: 100%;
 }
@@ -23,10 +16,10 @@ h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 26px;
-    margin-bottom: 8px;
 }
 h2 {
+    font-style: normal;
+    font-weight: 400;
     font-size: 22px;
 }
 h3 {
@@ -36,7 +29,25 @@ p {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/****** Font Awesome Icons ***********/
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+/****** Main Container ***********/
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 
 /****** Header ***********/
@@ -50,14 +61,14 @@ header {
 #logo {
     width: 61px;
     height: 19px;
-    padding: 25px 50px;
+    padding: 25px 0px;
 }
 nav {
-    width: 344px;
     height: 35px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: end;
+    gap: 50px;
 }
 .navlink {
     text-decoration: none;
@@ -70,22 +81,65 @@ nav {
     border-top: 2px solid var(--main-color);
 }
 
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
+/****** Info ***********/
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+/****** SearchBar ***********/
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 50px;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 15px;
+}
+.position {
+    background-color: var(--main-bg-color);
+    padding: 15px 18px 16px 18px;
+    border-radius: 15px 0px 0px 15px;
+}
+.fa-location-dot {
+    color: black;
+    width: 14px;
+    height: 18px;
+}
+.search-input {
+    border: none;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 10px;
+    text-overflow: ellipsis;
+    text-align: center;
+    color: black;
+}
+.search-input::placeholder {
+    color: black;
+}
+.search-button {
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 0px 16px;
+    gap: 5px;
+    border: 1px solid var(--main-color);
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+}
+.search-button .section-text {
+    color: white;
+}
+.fa-magnifying-glass {
+    display: none;
 }
 
-.section-title {
-    margin: 0;
-    font-size: 22px;
-}
+/****** Card ***********/
 
 .card {
     background-color: white;
