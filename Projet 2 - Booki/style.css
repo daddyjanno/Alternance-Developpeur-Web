@@ -213,7 +213,9 @@ nav {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
+    justify-content: space-between;
     gap: 40px;
+    width: 100%;
 }
 
 /****** Hebergements ***********/
@@ -221,9 +223,10 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 65%;
+    justify-content: space-between;
     background-color: var(--main-bg-color);
     border-radius: 20px;
+    width: 65%;
     gap: 2em;
     padding: 2em;
 }
@@ -233,6 +236,7 @@ nav {
 .hebergements-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    width: 100%;
     gap: 15px;
 }
 .hebergements-cards .card {
@@ -241,7 +245,7 @@ nav {
     padding: 0px 0px 15px;
 }
 .hebergements-cards img {
-    height: 180px;
+    height: 120px;
     width: calc(100% - 10px);
     border: 5px solid white;
     border-radius: 20px 20px 0px 0px;
@@ -257,11 +261,11 @@ nav {
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--main-bg-color);
+    width: 35%;
     border-radius: 20px;
     gap: 2em;
     padding: 2em;
