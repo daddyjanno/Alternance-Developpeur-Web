@@ -14,11 +14,13 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: aqua;
 }
 main {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    background-color: antiquewhite;
 }
 h1 {
     font-style: normal;
@@ -323,6 +325,37 @@ nav {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+/****** Activités ***********/
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 4em);
+    gap: 2em;
+    padding: 2em;
+}
+.activities-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.activities-cards .card {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(25% - 40px);
+    padding: 0;
+}
+.activities-cards img {
+    border-radius: 20px 20px 0 0;
+    height: 22.5em;
+}
+.card-content {
+    display: flex;
+    padding: 1em;
 }
 
 /****** Card ***********/
