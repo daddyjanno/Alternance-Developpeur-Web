@@ -14,13 +14,13 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 main {
     display: flex;
     flex-direction: column;
     gap: 2em;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 h1 {
     font-style: normal;
@@ -217,6 +217,37 @@ nav {
     font-size: 12px;
 }
 
+/****** Card ***********/
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    margin: 0.3em 0em;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color);
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -358,35 +389,18 @@ nav {
     padding: 1em;
 }
 
-/****** Card ***********/
-
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/****** Footer ***********/
+footer {
+    display: flex;
+    background-color: var(--main-bg-color);
+    padding: 20px 50px;
+    gap: 30px;
 }
-
-.card img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
-}
-.card-text {
+.about {
     display: flex;
     flex-direction: column;
-    gap: 0.6em;
-    margin: 0.3em 0em;
-}
-
-.euro {
-    font-weight: 700;
-}
-
-.neutral-star {
-    color: var(--main-bg-color);
+    gap: 20px;
+    width: 33%;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
