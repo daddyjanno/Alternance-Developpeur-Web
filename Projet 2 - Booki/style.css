@@ -387,7 +387,6 @@ nav {
 }
 .card-content {
     display: flex;
-    padding: 1em;
 }
 
 /****** Footer ***********/
@@ -434,7 +433,7 @@ footer {
     }
 
     .popular {
-        width: 100%;
+        width: calc(100% - 4em);
         margin-top: 50px;
     }
 
@@ -444,8 +443,11 @@ footer {
         justify-content: space-between;
     }
 
-    .popular-cards a {
+    .popular-cards .card {
         width: 30%;
+    }
+    .popular-cards .content {
+        padding: 0;
     }
 
     .popular-cards .card-title {
