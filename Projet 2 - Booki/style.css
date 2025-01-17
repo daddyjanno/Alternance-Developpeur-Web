@@ -567,5 +567,21 @@ footer {
 
     /****** Activités ***********/
     .activities {
+        width: calc(100% - 4em);
+        padding: 2em;
+    }
+    .activities-cards {
+        flex-direction: column;
+    }
+    .activities-cards .card {
+        width: 100%;
+    }
+    .activities-cards .card-content {
+        padding: 2em 1em;
+    }
+
+    /****** Footer ***********/
+    footer  {
+        flex-direction: column;
     }
 }
