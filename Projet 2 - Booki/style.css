@@ -300,8 +300,7 @@ nav {
 .populaires-cards img {
     width: 33%;
     height: calc(100%);
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px 0px 0px 20px;
 }
 
 .populaires-cards .card-content {
