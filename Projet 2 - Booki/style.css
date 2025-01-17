@@ -14,13 +14,11 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    /* background-color: aqua; */
 }
 main {
     display: flex;
     flex-direction: column;
     gap: 2em;
-    /* background-color: antiquewhite; */
 }
 h1 {
     font-style: normal;
@@ -220,6 +218,7 @@ nav {
 /****** Card ***********/
 
 .card {
+    position: relative;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -246,6 +245,15 @@ nav {
 
 .neutral-star {
     color: var(--main-bg-color);
+}
+
+/* link making all cards clickable */
+.card-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 /****** Populaires And Populaires ***********/
