@@ -338,7 +338,6 @@ nav {
 
 .popular-cards .card-content {
     width: 67%;
-    padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -387,6 +386,7 @@ nav {
 }
 .card-content {
     display: flex;
+    padding: 1em;
 }
 
 /****** Footer ***********/
@@ -446,9 +446,6 @@ footer {
     .popular-cards .card {
         width: 30%;
     }
-    .popular-cards .content {
-        padding: 0;
-    }
 
     .popular-cards .card-title {
         font-size: 14px;
@@ -461,7 +458,114 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        gap: 35px;
+        width: 100%;
+        max-width: 767.98px;
+        margin: 0 auto;
+    }
+
+    /****** Main ***********/
+
+    .main-container {
+        padding: 0;
+    }
+    /****** Header ***********/
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3em;
+    }
+    nav {
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 0;
+    }
+    .navlink {
+        text-align: center;
+        border-bottom: 2px solid var(--main-bg-color);
+        padding-top: 0px;
+        padding-bottom: 17px;
+        width: 100%;
+    }
+    .navlink:hover {
+        color: var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        border-top: none;
+    }
+
+    /****** Info-Group ***********/
+
+    .info-group {
+        padding: 0px 20px;
+    }
+
+    /***** Search Bar ******/
+    .searchbar {
+        border-radius: 15px;
+        gap: 0px;
+    }
+    .search-button {
+        border-radius: 15px;
+    }
+    .search-button p {
+        display: none;
+    }
+    .fa-magnifying-glass {
+        display: block;
+        color: white;
+    }
+    .search-input {
+        width: 100%;
+    }
+
+    /****** Filters ***********/
+    .filterbar {
+        gap: 20px;
+    }
+    .filters {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .filter {
+        justify-content: center;
+    }
+
+    /****** Populaires And Populaires ***********/
     .accomodation-and-popular {
         flex-direction: column-reverse;
+    }
+    /****** Populaires ***********/
+    .popular {
+        border-radius: 0%;
+    }
+    .popular-cards {
+        flex-direction: column;
+    }
+    .popular-cards .card {
+        width: 100%;
+    }
+    /****** Hébergements ***********/
+    .accomodation {
+        background-color: white;
+    }
+    .accomodation-cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .accomodation-cards .card {
+        width: 100%;
+    }
+
+    /****** Activités ***********/
+    .activities {
     }
 }
