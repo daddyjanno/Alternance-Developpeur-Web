@@ -12,6 +12,8 @@
 body {
     margin: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 /****** Main Container ***********/
 
@@ -73,9 +75,8 @@ article {
 .main {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 2.5em;
     width: 100%;
-    background-color: aquamarine;
 }
 
 #logo {
@@ -261,7 +262,7 @@ article {
 .accomodation-and-popular {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 2.5em;
     width: 100%;
 }
 
@@ -273,9 +274,9 @@ article {
     justify-content: space-between;
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    width: 65%;
-    gap: 2em;
-    padding: 2em;
+    width: 66%;
+    gap: 3em;
+    padding: 1.875em;
 }
 .accomodation h2 {
     font-weight: bold;
@@ -283,7 +284,7 @@ article {
 .accomodation-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 1.25em;
     justify-content: space-around;
 }
 .accomodation-cards .card {
@@ -313,10 +314,10 @@ article {
     align-items: flex-start;
     justify-content: space-between;
     background-color: var(--main-bg-color);
-    width: 35%;
+    width: 34%;
     border-radius: 20px;
     gap: 3em;
-    padding: 2em;
+    padding: 1.875em;
 }
 
 .popular-title {
@@ -371,10 +372,8 @@ article {
 .activities {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 5em);
-    padding: 2.5em;
+    padding: 1.875em;
     gap: 2em;
-    background-color: antiquewhite;
 }
 .activities-cards {
     display: flex;
@@ -403,8 +402,9 @@ footer {
     display: flex;
     justify-content: center;
     background-color: var(--main-bg-color);
-    width: calc(100% - 4em);
+    width: auto;
     padding: 2em;
+    margin-top: 2.188em;
 }
 .about {
     display: flex;
@@ -417,34 +417,25 @@ footer {
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    body {
-        padding: 0px;
-    }
-    .info-group {
-        padding: 0px;
-    }
     .filterbar {
         flex-direction: column;
         align-items: start;
-        width: 100%;
     }
 
     /****** Hebergements and populaires ***********/
 
     .accomodation-and-popular {
         flex-direction: column;
-        gap: 0px;
     }
 
     /****** Hebergements ******/
 
     .accomodation {
-        width: calc(100% - 4em);
+        width: auto;
     }
 
     .popular {
-        width: calc(100% - 4em);
-        margin-top: 50px;
+        width: auto;
     }
 
     .popular-cards {
