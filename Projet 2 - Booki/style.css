@@ -12,14 +12,16 @@
 body {
     margin: 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
+/****** Main Container ***********/
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 2.5em;
+    box-sizing: border-box;
 }
+
 h1 {
     font-style: normal;
     font-weight: 700;
@@ -60,40 +62,39 @@ article {
     color: var(--main-color);
 }
 
-/****** Main Container ***********/
-
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
 /****** Header ***********/
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
-    height: 79px;
+    height: 5em;
+}
+/****** Main ***********/
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+    background-color: aquamarine;
 }
 
 #logo {
-    width: 61px;
-    height: 19px;
-    padding: 25px 0px;
+    width: 3.75em;
+    height: 1.25em;
+    padding: 1.5em 0;
 }
-nav {
-    height: 35px;
+.navbar {
+    height: 2.5em;
     display: flex;
     justify-content: space-between;
     align-items: end;
-    gap: 50px;
+    gap: 3.125em;
 }
 .navlink {
     text-decoration: none;
     color: black;
     cursor: pointer;
-    padding-top: 14px;
+    padding-top: 0.875em;
 }
 .navlink:hover {
     color: var(--main-color);
@@ -370,10 +371,10 @@ nav {
 .activities {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: calc(100% - 5em);
+    padding: 2.5em;
     gap: 2em;
-    padding: 2em 0;
-    /* background-color: antiquewhite; */
+    background-color: antiquewhite;
 }
 .activities-cards {
     display: flex;
@@ -468,15 +469,12 @@ footer {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
     body {
-        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0px;
+        padding: 0;
         gap: 35px;
-        width: 100%;
         max-width: 767.98px;
-        margin: 0 auto;
     }
 
     /****** Main ***********/
@@ -486,12 +484,12 @@ footer {
     }
     /****** Header ***********/
 
-    header {
+    .header {
         flex-direction: column;
         align-items: center;
         padding-bottom: 3em;
     }
-    nav {
+    .navbar {
         width: 100%;
         justify-content: space-evenly;
         gap: 0;
@@ -512,7 +510,7 @@ footer {
     /****** Info-Group ***********/
 
     .info-group {
-        padding: 0px 20px;
+        padding: 0 1.25em;
     }
 
     /***** Search Bar ******/
@@ -555,6 +553,7 @@ footer {
     /****** Populaires ***********/
     .popular {
         border-radius: 0%;
+        width: 100%;
     }
     .popular-cards {
         flex-direction: column;
