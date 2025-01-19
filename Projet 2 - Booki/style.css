@@ -410,7 +410,7 @@ footer {
 .about {
     display: flex;
     flex-direction: column;
-    gap: 1sem;
+    gap: 1em;
     width: 33%;
 }
 
