@@ -15,17 +15,24 @@ export async function fetchCategories() {
 console.log('toto')
 
 const works = await fetchWorks()
+let categories = await fetchCategories()
+categories = ['Tous', ...categories]
 
 console.log(works)
+console.log(categories)
+
 const gallery = document.querySelector('.gallery')
-console.log(gallery)
 
 works.forEach((work) => {
-    gallery.innerHTML += ` <figure>
-                        <img
-                            src=${work.imageUrl}
-                            alt=${work.title}
-                        />
-                        <figcaption>${work.title}>
-                    </figure>`
+    const figure = document.createElement('figure')
+    gallery.appendChild(figure)
+
+    const img = document.createElement('img')
+    img.src = work.imageUrl
+    img.alt = work.title
+    figure.appendChild(img)
+
+    const figCaption = document.createElement('figcaption')
+    figCaption.innerText = work.title
+    figure.appendChild(figCaption)
 })
