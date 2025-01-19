@@ -94,7 +94,7 @@ article {
     text-decoration: none;
     color: black;
     cursor: pointer;
-    padding-top: 0.875em;
+    padding-top: 1.1em;
 }
 .navlink:hover {
     color: var(--main-color);
@@ -122,14 +122,14 @@ article {
     display: flex;
     align-items: center;
     justify-content: start;
-    height: 50px;
+    height: 3.125em;
     border: 1px solid var(--main-bg-color);
     border-radius: 1em;
 }
 .position {
     background-color: var(--main-bg-color);
-    padding: 16px;
-    border-radius: 15px 0px 0px 15px;
+    padding: 1em;
+    border-radius: 1em 0 0 1em;
 }
 .fa-location-dot {
     color: black;
@@ -158,7 +158,7 @@ article {
     align-items: center;
     background-color: var(--main-color);
     padding: 1em;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0 1em 1em 0;
     cursor: pointer;
 }
 .search-button .section-text {
@@ -220,18 +220,18 @@ article {
 .card {
     position: relative;
     background-color: white;
-    border-radius: 20px;
-    padding: 5px;
+    border-radius: 1em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
     object-fit: cover;
     overflow: hidden;
+    padding: 5px;
 }
 .card-content {
     display: flex;
-    padding: 0 1em;
+    padding: 0 1em 1em 1em;
 }
 
 .card-title {
@@ -276,8 +276,8 @@ article {
     align-items: flex-start;
     justify-content: space-between;
     background-color: var(--main-bg-color);
-    border-radius: 20px;
-    width: 66%;
+    border-radius: 1em;
+    width: 70%;
     gap: 1.25em;
     padding: 1.875em;
 }
@@ -293,13 +293,11 @@ article {
 .accomodation-cards .card {
     display: flex;
     flex-direction: column;
-    padding: 0px 0px 15px;
 }
 .accomodation-cards img {
     height: 11.25em;
     width: calc(100% - 10px);
-    border: 5px solid white;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 1em 1em 0 0;
 }
 .accomodation-cards .card-content {
     flex-direction: column;
@@ -315,8 +313,8 @@ article {
     align-items: flex-start;
     justify-content: space-between;
     background-color: var(--main-bg-color);
-    width: 34%;
-    border-radius: 20px;
+    width: 30%;
+    border-radius: 1em;
     gap: 1.25em;
     padding: 1.875em;
 }
@@ -343,7 +341,7 @@ article {
 
 .popular-cards img {
     width: 33%;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 1em 0 0 1em;
 }
 
 .popular-cards .card-content {
@@ -394,8 +392,9 @@ article {
 }
 
 .activities-cards img {
-    border-radius: 20px 20px 0 0;
+    border-radius: 1em 1em 0 0;
     height: 22.5em;
+    padding: 0;
 }
 
 /****** Footer ***********/
@@ -515,11 +514,11 @@ footer {
 
     /***** Search Bar ******/
     .searchbar {
-        border-radius: 15px;
+        border-radius: 1em;
         gap: 0px;
     }
     .search-button {
-        border-radius: 15px;
+        border-radius: 1em;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .search-button .section-text {
@@ -565,6 +564,7 @@ footer {
     }
     .popular-cards {
         flex-direction: column;
+        width: 100%;
     }
     .popular-cards .card {
         width: 100%;
@@ -573,6 +573,7 @@ footer {
     .accomodation {
         background-color: white;
         border-radius: 0%;
+        padding-top: 0;
     }
     .accomodation-cards {
         display: flex;
@@ -593,6 +594,7 @@ footer {
     }
     .activities-cards .card {
         width: 100%;
+        height: 15em;
     }
     .activities-cards .card-content {
         padding: 2em 1em;
